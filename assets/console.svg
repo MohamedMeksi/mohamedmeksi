@@ -62,13 +62,13 @@
     <line x1="40" y1="136" x2="780" y2="136" stroke="#30363d" stroke-width="1"/>
 
     <text x="40" y="164" class="label">repos_shipped</text>
-    <text x="190" y="164" class="value">28</text>
+    <text x="190" y="164" class="value">63</text>
 
     <text x="280" y="164" class="label">stars_earned</text>
     <text x="430" y="164" class="value">38</text>
 
     <text x="510" y="164" class="label">contributions_1y</text>
-    <text x="660" y="164" class="value">n/a</text>
+    <text x="660" y="164" class="value">33</text>
 
     <text x="40" y="192" class="label">last_public_push</text>
     <text x="190" y="192" class="value">0h ago</text>
