@@ -95,13 +95,14 @@ def _hours_since(iso_timestamp: str) -> int:
 
 
 def _fetch_contributions_1y() -> int | None:
+    if not HAS_OWNER_ACCESS:
+        return None
     data = _graphql(
-        "query($login: String!) { user(login: $login) { "
-        "contributionsCollection { contributionCalendar { totalContributions } } } }",
-        {"login": USERNAME},
+        "query { viewer { contributionsCollection { contributionCalendar { totalContributions } } } }",
+        {},
     )
     try:
-        return data["user"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
+        return data["viewer"]["contributionsCollection"]["contributionCalendar"]["totalContributions"]
     except (TypeError, KeyError):
         return None
 
@@ -236,7 +237,7 @@ def render_svg(data: ConsoleData) -> str:
     <animate attributeName="opacity" from="0" to="1" begin="0.5s" dur="0.5s" fill="freeze"/>
 
     <text x="40" y="118" class="label">MISSION:</text>
-    <text x="130" y="118" class="value">WhatsApp &amp; AI agent automation · full-stack e-commerce &amp; field-ops</text>
+    <text x="130" y="118" class="value">WhatsApp &amp; AI agent · full-stack developer</text>
 
     <line x1="40" y1="136" x2="{width - 40}" y2="136" stroke="#30363d" stroke-width="1"/>
 
