@@ -42,17 +42,17 @@ based_in  : Morocco 🇲🇦 · open to remote
 
 | Instance | Modules used | Function | Result |
 |---|---|---|---|
-| **WhatsApp Business API Gateway** | Python, FastAPI, MongoDB, Redis | API REST multi-tenant pour envoyer, recevoir et suivre des messages WhatsApp Business | En production · architecture multi-tenant |
-| **WhatsApp Coexistence** | TypeScript, Node.js, Express, Prisma, PostgreSQL, Redis | Plateforme multi-tenant pour onboarder un numéro WhatsApp Business en coexistence (app mobile + Cloud API) | En production · app mobile + Cloud API en parallèle |
-| **WhatsApp Catalogue Agent** | Python, FastAPI, MongoDB, WhatsApp Cloud API | Assistant WhatsApp qui aide les clients à parcourir un catalogue produit et qualifie les demandes pour un conseiller | En production · qualification automatique avant transfert humain |
-| **WhatsApp Sales CRM** | Next.js, TypeScript, MongoDB, NextAuth | CRM pour suivre les leads qualifiés via WhatsApp jusqu'à la prise en charge commerciale | En production · utilisé au quotidien par l'équipe commerciale |
-| **Assistant WhatsApp Formation** | Python, Flask, OpenAI (Function Calling), Firestore, MongoDB | Agent conversationnel WhatsApp multilingue (FR/EN/AR) qui guide les candidats du premier contact jusqu'à l'inscription, avec 17 outils métier intégrés | 100% des réponses automatisées 24/7 · -80% de temps de gestion manuelle |
-| **CRM commercial** | TypeScript, React, Vite, Tailwind CSS, Supabase (PostgreSQL) | Centralise le suivi commercial (leads, devis, commandes) et la messagerie client pour les équipes de vente | En production · centralise leads, devis et messagerie en un seul outil |
-| **[Kairos](https://kairoscopilot.com/)** · *AI Executive Copilot* | Next.js, TypeScript, Python, Flask, MongoDB | Copilote vocal qui rédige emails, prend des rendez-vous et gère l'agenda directement depuis WhatsApp/Telegram | En production · 70%+ du développement livré par moi · présenté à GITEX Africa 2026 |
-| **Piscibio** | TypeScript, Next.js, React, Prisma, PostgreSQL, Tailwind CSS | Plateforme mobile full-stack qui digitalise les opérations d'une entreprise de maintenance piscines, des techniciens terrain au reporting client | En production · shippé de bout en bout |
-| **[Click-Tracker](https://pypi.org/project/click-tracker/)** | Python, Flask | Librairie de tracking web publiée sur PyPI : device/bot detection et géolocalisation en temps réel | 1000 req/min soutenues · latence < 50ms · précision géo 92% (ville) |
+| **WhatsApp Business API Gateway** | Python, FastAPI, MongoDB, Redis | Multi-tenant REST API to send, receive and track WhatsApp Business messages | In production · multi-tenant architecture |
+| **WhatsApp Coexistence** | TypeScript, Node.js, Express, Prisma, PostgreSQL, Redis | Multi-tenant platform to onboard a WhatsApp Business number in coexistence mode (mobile app + Cloud API) | In production · mobile app + Cloud API running in parallel |
+| **WhatsApp Catalogue Agent** | Python, FastAPI, MongoDB, WhatsApp Cloud API | WhatsApp assistant that helps customers browse a product catalogue and qualifies requests for a sales rep | In production · automatic qualification before handoff to a human |
+| **WhatsApp Sales CRM** | Next.js, TypeScript, MongoDB, NextAuth | CRM to track qualified leads via WhatsApp through to sales handling | In production · used daily by the sales team |
+| **WhatsApp Training Assistant** | Python, Flask, OpenAI (Function Calling), Firestore, MongoDB | Multilingual (FR/EN/AR) WhatsApp conversational agent that guides candidates from first contact to enrollment, with 17 integrated business tools | 100% of responses automated 24/7 · -80% manual management time |
+| **Sales CRM** | TypeScript, React, Vite, Tailwind CSS, Supabase (PostgreSQL) | Centralizes sales tracking (leads, quotes, orders) and customer messaging for sales teams | In production · centralizes leads, quotes, and messaging in one tool |
+| **[Kairos](https://kairoscopilot.com/)** · *AI Executive Copilot* | Next.js, TypeScript, Python, Flask, MongoDB | Voice copilot that drafts emails, books meetings, and manages the agenda directly from WhatsApp/Telegram | In production · 70%+ of development shipped by me · presented at GITEX Africa 2026 |
+| **Piscibio** | TypeScript, Next.js, React, Prisma, PostgreSQL, Tailwind CSS | Full-stack mobile platform digitizing pool maintenance operations, from field technicians to client reporting | In production · shipped end to end |
+| **[Click-Tracker](https://pypi.org/project/click-tracker/)** | Python, Flask | Web tracking library published on PyPI: real-time device/bot detection and geolocation | 1000 req/min sustained · latency < 50ms · 92% geo accuracy (city-level) |
 
-> Voir [tous les repos](https://github.com/mohamedmeksi?tab=repositories).
+> See [all repos](https://github.com/mohamedmeksi?tab=repositories).
 
 ---
 
