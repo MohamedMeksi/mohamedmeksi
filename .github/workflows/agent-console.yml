@@ -29,6 +29,10 @@ jobs:
         env:
           GH_USERNAME: mohamedmeksi
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Optional: a personal access token with repo read access, so
+          # counts include private repos (matches the real profile page).
+          # Falls back to public-only data if this secret isn't set.
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
         run: python scripts/generate_console.py
 
       - name: Commit changes if any

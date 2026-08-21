@@ -62,26 +62,26 @@
     <line x1="40" y1="136" x2="780" y2="136" stroke="#30363d" stroke-width="1"/>
 
     <text x="40" y="164" class="label">repos_shipped</text>
-    <text x="190" y="164" class="value">27</text>
+    <text x="190" y="164" class="value">28</text>
 
     <text x="280" y="164" class="label">stars_earned</text>
     <text x="430" y="164" class="value">38</text>
 
-    <text x="510" y="164" class="label">commits_30d</text>
-    <text x="660" y="164" class="value">0</text>
+    <text x="510" y="164" class="label">contributions_1y</text>
+    <text x="660" y="164" class="value">n/a</text>
 
-    <text x="40" y="192" class="label">last_deploy</text>
-    <text x="190" y="192" class="value">10d ago</text>
+    <text x="40" y="192" class="label">last_public_push</text>
+    <text x="190" y="192" class="value">0h ago</text>
 
     <line x1="40" y1="210" x2="780" y2="210" stroke="#30363d" stroke-width="1"/>
 
     <text x="40" y="220" class="label">$ tail -f task_queue.log</text>
   </g>
 
-  <text x="40" y="236" class="log" opacity="0">[AGENT] idle -- awaiting next deploy signal<animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.25s" fill="freeze"/></text>
+  <text x="40" y="236" class="log" opacity="0">[TASK] mohamedmeksi last synced · 0h ago<animate attributeName="opacity" from="0" to="1" begin="1.0s" dur="0.25s" fill="freeze"/></text><text x="40" y="259" class="log" opacity="0">[TASK] ai-job-search last synced · 10d ago<animate attributeName="opacity" from="0" to="1" begin="1.3s" dur="0.25s" fill="freeze"/></text><text x="40" y="282" class="log" opacity="0">[TASK] Backpack-3-Flask-Clean-Architecture last synced · 38d ago<animate attributeName="opacity" from="0" to="1" begin="1.6s" dur="0.25s" fill="freeze"/></text><text x="40" y="305" class="log" opacity="0">[TASK] Backpack-2-Node-Express-Architecture last synced · 58d ago<animate attributeName="opacity" from="0" to="1" begin="1.9s" dur="0.25s" fill="freeze"/></text>
 
-  <rect class="cursor" x="40" y="249" width="8" height="13" opacity="0">
-    <animate attributeName="opacity" from="0" to="1" begin="1.5s" dur="0.15s" fill="freeze"/>
-    <animate attributeName="opacity" values="1;0;1" dur="1s" begin="1.6s" repeatCount="indefinite"/>
+  <rect class="cursor" x="40" y="318" width="8" height="13" opacity="0">
+    <animate attributeName="opacity" from="0" to="1" begin="2.4s" dur="0.15s" fill="freeze"/>
+    <animate attributeName="opacity" values="1;0;1" dur="1s" begin="2.6s" repeatCount="indefinite"/>
   </rect>
 </svg>
