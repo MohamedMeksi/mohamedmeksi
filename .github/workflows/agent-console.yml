@@ -1,0 +1,44 @@
+name: Refresh Agent Console
+
+on:
+  schedule:
+    - cron: "0 6 * * *"   # daily at 06:00 UTC
+  workflow_dispatch: {}     # allow manual runs from the Actions tab
+
+# Prevent overlapping runs from racing on the same commit.
+concurrency:
+  group: agent-console
+  cancel-in-progress: false
+
+permissions:
+  contents: write   # least privilege: only what's needed to commit the SVG
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Generate console SVG
+        env:
+          GH_USERNAME: mohamedmeksi
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/generate_console.py
+
+      - name: Commit changes if any
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/console.svg
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: refresh agent console [skip ci]"
+            git push
+          fi
